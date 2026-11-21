@@ -1,0 +1,55 @@
+# ---------------------------------------------------------------
+# PyTorch (reference only - NOT installed from this file)
+# Install the CUDA :
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+# Normal (CPU / default) version, if you ever need it (e.g. Docker):
+# torch
+# torchvision
+# ---------------------------------------------------------------
+
+# Core
+numpy
+pandas
+matplotlib
+seaborn
+pyyaml
+python-dotenv
+tqdm
+jupyter
+ipykernel
+
+# Vision
+opencv-python
+pillow
+albumentations
+ultralytics
+grad-cam
+
+# ML
+scikit-learn
+xgboost
+lightgbm
+shap
+imbalanced-learn
+
+# MLOps
+dvc
+mlflow
+
+# Backend
+fastapi
+uvicorn[standard]
+pydantic
+python-multipart
+sqlalchemy
+alembic
+psycopg2-binary
+python-jose
+passlib[bcrypt]
+python-json-logger
+prometheus-client
+
+# Testing
+pytest
+httpx
+pytest-cov

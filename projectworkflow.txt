@@ -1,0 +1,67 @@
+INSURECLAIM VISION - PROJECT WORKFLOW LOG
+
+STEP 0 - ENVIRONMENT
+[ ] conda env InsureClaim created
+[ ] GPU PyTorch installed, cuda.is_available() = True
+[ ] requirements installed, kernel registered
+[ ] python create_structure.py run
+[ ] git init, dvc init, local DVC remote added
+[ ] MLflow UI opens
+
+STEP 1 - DATA 
+[ ] Place data1a in data/raw/; dvc add
+[ ] NB01 audit: counts, corrupt, duplicates, train/val overlap
+[ ] NB02 EDA, figures saved to reports/figures/eda
+[ ] NB03 preprocessing + augmentation, reusable Dataset/DataLoader in src/
+Notes:
+
+STEP 2 - CLASSIFIER + GRAD-CAM 
+[ ] Baseline CNN, ResNet18 (frozen vs fine-tuned), 1 lightweight model
+[ ] Metrics: acc, precision, recall, F1, ROC-AUC, confusion matrix
+[ ] Error analysis (false negatives first)
+[ ] Grad-CAM outputs saved
+Notes:
+
+STEP 3 - DAMAGE + PARTS DETECTION 
+[ ] Download CarDD, check license, verify class IDs
+[ ] Convert to YOLO format, data.yaml, verify image/label pairs
+[ ] Train YOLOv8n (640, batch 4), then tune
+[ ] Parts dataset sourced and trained
+[ ] mAP50, mAP50-95, per-class, latency
+Notes:
+
+STEP 4 - SEVERITY 
+[ ] Decide: labelled dataset OR documented heuristic (state which)
+[ ] Evaluate / document limitations
+Notes:
+
+STEP 5 - COST ENGINE 
+[ ] Cost table (part x damage x severity), rule-based, assumptions documented
+[ ] Output min-max range, not a single number
+Notes:
+
+STEP 6 - FRAUD 
+[ ] Synthetic claims generator with documented rules, no label leakage
+[ ] LogReg / RF / XGBoost, PR-AUC, recall, threshold tuning
+[ ] SHAP explanations
+Notes:
+
+STEP 7 - BACKEND 
+[ ] Endpoints: /claims, /images, /assess, /report, /decision, /health, /metrics
+[ ] PostgreSQL schema + audit log (previous value, new value, user, time, reason)
+[ ] JSON structured logging, auth, validation
+[ ] pytest: success + failure cases
+Notes:
+
+STEP 8 - FRONTEND 
+[ ] Login, claims list, image view with box overlay, Grad-CAM
+[ ] Cost, fraud + SHAP, approve / reject / override with reason, audit history
+Notes:
+
+STEP 9 - DEPLOY + DELIVERABLES 
+[ ] Dockerfile, docker-compose (api, db, frontend)
+[ ] README + setup instructions, architecture diagram, API docs
+[ ] Test results report, metrics tables
+[ ] Demo video, 10-min presentation, individual reflection
+
+EXPERIMENT LOG: see reports/experiments/experiment_log.csv
