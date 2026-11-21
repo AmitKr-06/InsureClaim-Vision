@@ -1,0 +1,2 @@
+total_images,train_images,valid_images,damaged_images,whole_images,corrupted_images,exact_duplicate_groups,near_duplicate_groups,cross_split_leaks
+2300,1840,460,1150,1150,0,13,22,6
