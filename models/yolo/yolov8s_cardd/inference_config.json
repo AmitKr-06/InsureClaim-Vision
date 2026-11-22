@@ -1,0 +1,26 @@
+{
+  "weights": "models/yolo/yolov8s_cardd/weights/best.pt",
+  "classes": [
+    "dent",
+    "scratch",
+    "crack",
+    "glass shatter",
+    "lamp broken",
+    "tire flat"
+  ],
+  "imgsz": 640,
+  "confidence_threshold": 0.3,
+  "nms_iou": 0.7,
+  "max_det": 300,
+  "image_level_threshold": 0.6,
+  "classifier_threshold": 0.25,
+  "median_latency_ms_rtx3050": 21.9,
+  "versions": {
+    "ultralytics": "8.4.216",
+    "torch": "2.5.1+cu121"
+  },
+  "notes": [
+    "Detector localizes and classifies damage type; damage types are NOT severity labels.",
+    "Detector alone is not a reliable damaged/undamaged gate (46% false alarms on whole cars)."
+  ]
+}
