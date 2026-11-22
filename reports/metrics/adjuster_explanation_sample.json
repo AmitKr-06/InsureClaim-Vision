@@ -1,0 +1,17 @@
+{
+    "image_id": "0055.jpg",
+    "model": "resnet18_finetuned (EXP-03)",
+    "predicted_class": "damaged",
+    "damage_probability": 0.3524,
+    "decision_threshold": 0.25,
+    "review_recommended": true,
+    "review_reason": "probability in 0.3-0.7 low-confidence band",
+    "explanation": {
+        "method": "Grad-CAM",
+        "target_layer": "layer4[-1]",
+        "target_class": "damaged",
+        "overlay_image": "reports/figures/explainability/overlays/0055.jpg_overlay.png",
+        "note": "Regions that influenced the classifier; not a damage location."
+    },
+    "disclaimer": "Decision support only. Final decision by a human adjuster."
+}

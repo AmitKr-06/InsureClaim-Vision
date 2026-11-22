@@ -1,0 +1,230 @@
+[
+    {
+        "image_id": "training/01-whole/0055.jpg",
+        "model": "resnet18_finetuned (EXP-03)",
+        "checkpoint": "exp03_resnet18_finetuned.pth",
+        "predicted_class": "damaged",
+        "damage_probability": 0.3531,
+        "decision_threshold": 0.25,
+        "review_recommended": true,
+        "review_reason": "probability within review band [0.2, 0.9]",
+        "explanation": {
+            "method": "Grad-CAM",
+            "target_layer": "layer4[-1]",
+            "target_class": "damaged",
+            "overlay_image": "reports/figures/explainability/overlays/training__01-whole__0055_jpg_overlay.png",
+            "raw_max_activation": 0.0549,
+            "note": "Regions that influenced the classifier; not a damage location."
+        },
+        "disclaimer": "Decision support only. Final decision by a human adjuster."
+    },
+    {
+        "image_id": "training/01-whole/0759.jpg",
+        "model": "resnet18_finetuned (EXP-03)",
+        "checkpoint": "exp03_resnet18_finetuned.pth",
+        "predicted_class": "damaged",
+        "damage_probability": 0.679,
+        "decision_threshold": 0.25,
+        "review_recommended": true,
+        "review_reason": "probability within review band [0.2, 0.9]",
+        "explanation": {
+            "method": "Grad-CAM",
+            "target_layer": "layer4[-1]",
+            "target_class": "damaged",
+            "overlay_image": "reports/figures/explainability/overlays/training__01-whole__0759_jpg_overlay.png",
+            "raw_max_activation": 0.0368,
+            "note": "Regions that influenced the classifier; not a damage location."
+        },
+        "disclaimer": "Decision support only. Final decision by a human adjuster."
+    },
+    {
+        "image_id": "training/01-whole/0763.jpg",
+        "model": "resnet18_finetuned (EXP-03)",
+        "checkpoint": "exp03_resnet18_finetuned.pth",
+        "predicted_class": "damaged",
+        "damage_probability": 0.909,
+        "decision_threshold": 0.25,
+        "review_recommended": false,
+        "review_reason": null,
+        "explanation": {
+            "method": "Grad-CAM",
+            "target_layer": "layer4[-1]",
+            "target_class": "damaged",
+            "overlay_image": "reports/figures/explainability/overlays/training__01-whole__0763_jpg_overlay.png",
+            "raw_max_activation": 0.1576,
+            "note": "Regions that influenced the classifier; not a damage location."
+        },
+        "disclaimer": "Decision support only. Final decision by a human adjuster."
+    },
+    {
+        "image_id": "training/01-whole/0805.JPEG",
+        "model": "resnet18_finetuned (EXP-03)",
+        "checkpoint": "exp03_resnet18_finetuned.pth",
+        "predicted_class": "damaged",
+        "damage_probability": 0.8836,
+        "decision_threshold": 0.25,
+        "review_recommended": true,
+        "review_reason": "probability within review band [0.2, 0.9]",
+        "explanation": {
+            "method": "Grad-CAM",
+            "target_layer": "layer4[-1]",
+            "target_class": "damaged",
+            "overlay_image": "reports/figures/explainability/overlays/training__01-whole__0805_JPEG_overlay.png",
+            "raw_max_activation": 0.0468,
+            "note": "Regions that influenced the classifier; not a damage location."
+        },
+        "disclaimer": "Decision support only. Final decision by a human adjuster."
+    },
+    {
+        "image_id": "training/01-whole/0814.JPEG",
+        "model": "resnet18_finetuned (EXP-03)",
+        "checkpoint": "exp03_resnet18_finetuned.pth",
+        "predicted_class": "damaged",
+        "damage_probability": 0.4537,
+        "decision_threshold": 0.25,
+        "review_recommended": true,
+        "review_reason": "probability within review band [0.2, 0.9]",
+        "explanation": {
+            "method": "Grad-CAM",
+            "target_layer": "layer4[-1]",
+            "target_class": "damaged",
+            "overlay_image": "reports/figures/explainability/overlays/training__01-whole__0814_JPEG_overlay.png",
+            "raw_max_activation": 0.0928,
+            "note": "Regions that influenced the classifier; not a damage location."
+        },
+        "disclaimer": "Decision support only. Final decision by a human adjuster."
+    },
+    {
+        "image_id": "training/01-whole/0815.JPEG",
+        "model": "resnet18_finetuned (EXP-03)",
+        "checkpoint": "exp03_resnet18_finetuned.pth",
+        "predicted_class": "damaged",
+        "damage_probability": 0.921,
+        "decision_threshold": 0.25,
+        "review_recommended": false,
+        "review_reason": null,
+        "explanation": {
+            "method": "Grad-CAM",
+            "target_layer": "layer4[-1]",
+            "target_class": "damaged",
+            "overlay_image": "reports/figures/explainability/overlays/training__01-whole__0815_JPEG_overlay.png",
+            "raw_max_activation": 0.0743,
+            "note": "Regions that influenced the classifier; not a damage location."
+        },
+        "disclaimer": "Decision support only. Final decision by a human adjuster."
+    },
+    {
+        "image_id": "training/01-whole/0854.JPEG",
+        "model": "resnet18_finetuned (EXP-03)",
+        "checkpoint": "exp03_resnet18_finetuned.pth",
+        "predicted_class": "damaged",
+        "damage_probability": 0.9513,
+        "decision_threshold": 0.25,
+        "review_recommended": false,
+        "review_reason": null,
+        "explanation": {
+            "method": "Grad-CAM",
+            "target_layer": "layer4[-1]",
+            "target_class": "damaged",
+            "overlay_image": "reports/figures/explainability/overlays/training__01-whole__0854_JPEG_overlay.png",
+            "raw_max_activation": 0.1361,
+            "note": "Regions that influenced the classifier; not a damage location."
+        },
+        "disclaimer": "Decision support only. Final decision by a human adjuster."
+    },
+    {
+        "image_id": "training/01-whole/0882.JPEG",
+        "model": "resnet18_finetuned (EXP-03)",
+        "checkpoint": "exp03_resnet18_finetuned.pth",
+        "predicted_class": "damaged",
+        "damage_probability": 0.2512,
+        "decision_threshold": 0.25,
+        "review_recommended": true,
+        "review_reason": "probability within review band [0.2, 0.9]",
+        "explanation": {
+            "method": "Grad-CAM",
+            "target_layer": "layer4[-1]",
+            "target_class": "damaged",
+            "overlay_image": "reports/figures/explainability/overlays/training__01-whole__0882_JPEG_overlay.png",
+            "raw_max_activation": 0.0558,
+            "note": "Regions that influenced the classifier; not a damage location."
+        },
+        "disclaimer": "Decision support only. Final decision by a human adjuster."
+    },
+    {
+        "image_id": "validation/01-whole/0019.jpg",
+        "model": "resnet18_finetuned (EXP-03)",
+        "checkpoint": "exp03_resnet18_finetuned.pth",
+        "predicted_class": "damaged",
+        "damage_probability": 0.2855,
+        "decision_threshold": 0.25,
+        "review_recommended": true,
+        "review_reason": "probability within review band [0.2, 0.9]",
+        "explanation": {
+            "method": "Grad-CAM",
+            "target_layer": "layer4[-1]",
+            "target_class": "damaged",
+            "overlay_image": "reports/figures/explainability/overlays/validation__01-whole__0019_jpg_overlay.png",
+            "raw_max_activation": 0.0459,
+            "note": "Regions that influenced the classifier; not a damage location."
+        },
+        "disclaimer": "Decision support only. Final decision by a human adjuster."
+    },
+    {
+        "image_id": "validation/01-whole/0207.JPEG",
+        "model": "resnet18_finetuned (EXP-03)",
+        "checkpoint": "exp03_resnet18_finetuned.pth",
+        "predicted_class": "damaged",
+        "damage_probability": 0.8149,
+        "decision_threshold": 0.25,
+        "review_recommended": true,
+        "review_reason": "probability within review band [0.2, 0.9]",
+        "explanation": {
+            "method": "Grad-CAM",
+            "target_layer": "layer4[-1]",
+            "target_class": "damaged",
+            "overlay_image": "reports/figures/explainability/overlays/validation__01-whole__0207_JPEG_overlay.png",
+            "raw_max_activation": 0.0768,
+            "note": "Regions that influenced the classifier; not a damage location."
+        },
+        "disclaimer": "Decision support only. Final decision by a human adjuster."
+    },
+    {
+        "image_id": "validation/01-whole/0214.JPEG",
+        "model": "resnet18_finetuned (EXP-03)",
+        "checkpoint": "exp03_resnet18_finetuned.pth",
+        "predicted_class": "damaged",
+        "damage_probability": 0.8929,
+        "decision_threshold": 0.25,
+        "review_recommended": true,
+        "review_reason": "probability within review band [0.2, 0.9]",
+        "explanation": {
+            "method": "Grad-CAM",
+            "target_layer": "layer4[-1]",
+            "target_class": "damaged",
+            "overlay_image": "reports/figures/explainability/overlays/validation__01-whole__0214_JPEG_overlay.png",
+            "raw_max_activation": 0.1013,
+            "note": "Regions that influenced the classifier; not a damage location."
+        },
+        "disclaimer": "Decision support only. Final decision by a human adjuster."
+    },
+    {
+        "image_id": "validation/01-whole/0218.JPEG",
+        "model": "resnet18_finetuned (EXP-03)",
+        "checkpoint": "exp03_resnet18_finetuned.pth",
+        "predicted_class": "damaged",
+        "damage_probability": 0.8264,
+        "decision_threshold": 0.25,
+        "review_recommended": true,
+        "review_reason": "probability within review band [0.2, 0.9]",
+        "explanation": {
+            "method": "Grad-CAM",
+            "target_layer": "layer4[-1]",
+            "target_class": "damaged",
+            "overlay_image": "reports/figures/explainability/overlays/validation__01-whole__0218_JPEG_overlay.png",
+            "raw_max_activation": 0.0597,
+            "note": "Regions that influenced the classifier; not a damage location."
+        },
+        "disclaimer": "Decision support only. Final decision by a human adjuster."
+    }
+]
