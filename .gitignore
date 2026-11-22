@@ -160,6 +160,16 @@ env.bak/
 venv.bak/
 .vscode
 
+# Data
+data/raw/
+data/processed/cardd_yolo/
+notebooks/runs/
+notebooks/mlruns/
+notebooks/mlflow.db
+notebooks/yolov8s.pt
+models/yolo/**/*.pt
+!models/yolo/yolov8s_cardd/weights/best.pt
+
 # Conda environments
 conda-meta/
 
