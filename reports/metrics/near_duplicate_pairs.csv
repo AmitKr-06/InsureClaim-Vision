@@ -1,0 +1,2 @@
+image_a,image_b,split_a,split_b,hamming_distance
+train/000473,val/000790,train,val,2
