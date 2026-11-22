@@ -1,0 +1,7 @@
+classification:
+  review_band:
+  - 0.2
+  - 0.7
+detection:
+  confidence_threshold: 0.3
+  image_level_threshold: 0.6
