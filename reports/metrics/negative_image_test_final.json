@@ -1,0 +1,123 @@
+{
+  "threshold": 0.3,
+  "n_whole": 174,
+  "detector_false_alarms": 80,
+  "classifier_false_alarms": 12,
+  "n_cardd": 374,
+  "detector_hits": 368,
+  "classifier_hits": 353,
+  "examples": [
+    {
+      "image": "training\\01-whole\\0004.jpg",
+      "n": 1,
+      "top": [
+        [
+          "scratch",
+          0.442
+        ]
+      ]
+    },
+    {
+      "image": "training\\01-whole\\0025.jpg",
+      "n": 1,
+      "top": [
+        [
+          "scratch",
+          0.497
+        ]
+      ]
+    },
+    {
+      "image": "training\\01-whole\\0029.jpg",
+      "n": 1,
+      "top": [
+        [
+          "dent",
+          0.434
+        ]
+      ]
+    },
+    {
+      "image": "training\\01-whole\\0053.jpg",
+      "n": 1,
+      "top": [
+        [
+          "tire flat",
+          0.343
+        ]
+      ]
+    },
+    {
+      "image": "training\\01-whole\\0055.jpg",
+      "n": 2,
+      "top": [
+        [
+          "tire flat",
+          0.659
+        ],
+        [
+          "glass shatter",
+          0.6
+        ]
+      ]
+    },
+    {
+      "image": "training\\01-whole\\0063.jpg",
+      "n": 2,
+      "top": [
+        [
+          "glass shatter",
+          0.679
+        ],
+        [
+          "glass shatter",
+          0.395
+        ]
+      ]
+    },
+    {
+      "image": "training\\01-whole\\0075.jpg",
+      "n": 2,
+      "top": [
+        [
+          "dent",
+          0.621
+        ],
+        [
+          "tire flat",
+          0.35
+        ]
+      ]
+    },
+    {
+      "image": "training\\01-whole\\0109.jpg",
+      "n": 1,
+      "top": [
+        [
+          "scratch",
+          0.342
+        ]
+      ]
+    },
+    {
+      "image": "training\\01-whole\\0114.jpg",
+      "n": 1,
+      "top": [
+        [
+          "lamp broken",
+          0.659
+        ]
+      ]
+    },
+    {
+      "image": "training\\01-whole\\0128.jpg",
+      "n": 1,
+      "top": [
+        [
+          "dent",
+          0.314
+        ]
+      ]
+    }
+  ]
+}

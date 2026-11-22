@@ -1,0 +1,147 @@
+{
+  "model": {
+    "architecture": "YOLOv8s (COCO-pretrained)",
+    "weights": "models/yolo/yolov8s_cardd/weights/best.pt",
+    "size_mb": 22.5,
+    "imgsz": 640,
+    "epochs": 50,
+    "training_hours": 1.193
+  },
+  "dataset": {
+    "name": "CarDD",
+    "classes": [
+      "dent",
+      "scratch",
+      "crack",
+      "glass shatter",
+      "lamp broken",
+      "tire flat"
+    ],
+    "splits": {
+      "train": 2816,
+      "val": 810,
+      "test": 374
+    }
+  },
+  "ultralytics_test": {
+    "mAP50": 0.7409422426691181,
+    "mAP50_95": 0.5520081137257059,
+    "precision": 0.72711939803819,
+    "recall": 0.7343725129447538,
+    "per_class_AP50": {
+      "dent": 0.6385085772307784,
+      "scratch": 0.6325163657636689,
+      "crack": 0.4380635709789531,
+      "glass shatter": 0.9820776255594966,
+      "lamp broken": 0.864307634138954,
+      "tire flat": 0.8901796823428583
+    }
+  },
+  "bootstrap_mAP50": {
+    "point_ultralytics": 0.7409422426691181,
+    "ci95": [
+      0.700510695447716,
+      0.7730150586354323
+    ],
+    "per_class_ci95": {
+      "dent": [
+        0.566469023229267,
+        0.7045436162533437
+      ],
+      "scratch": [
+        0.557808478216854,
+        0.6660793224026341
+      ],
+      "crack": [
+        0.31145726193972645,
+        0.5760950083907753
+      ],
+      "glass shatter": [
+        0.9512974630325125,
+        0.9942687282229965
+      ],
+      "lamp broken": [
+        0.7733102796984732,
+        0.9391944220409606
+      ],
+      "tire flat": [
+        0.7607593134063149,
+        0.964323171924676
+      ]
+    },
+    "n_resamples": 1000,
+    "ap_function_gap_vs_ultralytics": 0.004921448767989056
+  },
+  "operating_point": {
+    "confidence_threshold": 0.3,
+    "chosen_on": "validation micro-F1 (custom matching, IoU 0.5)",
+    "test_micro_precision": 0.674025974025974,
+    "test_micro_recall": 0.6611464968152866,
+    "test_micro_f1": 0.6675241157556269,
+    "test_per_class_f1": {
+      "dent": 0.6359649122807017,
+      "scratch": 0.6161290322580645,
+      "crack": 0.46875,
+      "glass shatter": 0.958904109589041,
+      "lamp broken": 0.8028169014084507,
+      "tire flat": 0.8253968253968254
+    }
+  },
+  "miss_anatomy_test": {
+    "total_missed": 266,
+    "by_kind": {
+      "low confidence": 188,
+      "mislocalized": 62,
+      "nothing overlaps": 16
+    },
+    "found_pct_by_size_640px": {
+      "<25 px": 30.0,
+      "25-50": 35.0,
+      "50-100": 52.0,
+      ">100": 77.0
+    }
+  },
+  "whole_car_negatives": {
+    "n": 174,
+    "detector_false_alarm_rate": 0.45977011494252873,
+    "classifier_false_alarm_rate": 0.06896551724137931
+  },
+  "cardd_image_recall": {
+    "detector": 0.983957219251337,
+    "classifier": 0.9438502673796791
+  },
+  "kaggle_image_level": {
+    "image_threshold": 0.6,
+    "detector_AUC": 0.6396351242983158,
+    "classifier_AUC": 0.9929497460572039,
+    "detector": {
+      "recall": 0.27906976744186046,
+      "false_alarm": 0.14942528735632185
+    },
+    "classifier": {
+      "recall": 0.9709302325581395,
+      "false_alarm": 0.06896551724137931
+    }
+  },
+  "latency_ms": {
+    "median": 21.898949999012984,
+    "p95": 30.84999000420793,
+    "fps": 45.66428984243863
+  },
+  "manual_review_tags_n12": {
+    "ambiguous label": 4,
+    "tiny / minimal damage": 3,
+    "borderline (conf just under 0.30)": 2,
+    "low-contrast / thin": 2,
+    "occluded / edge / cluttered": 1
+  },
+  "limitations": [
+    "Crack is the weakest class (test AP50 0.438, 95% CI 0.31-0.58; custom recall 0.43).",
+    "Small damage is found far less often: 30% under 25px vs 77% over 100px.",
+    "188 of 266 misses (71%) are low-confidence detections (model sees the region, scores below 0.3).",
+    "Detector false-alarm rate on whole undamaged cars is 46.0%; it must not be used alone as a damaged/undamaged gate.",
+    "Detector transfers poorly to Kaggle-style images (AUC 0.640, recall 27.9% at image threshold 0.6); the ResNet18 classifier (AUC 0.993) is the better gate.",
+    "Damage classes are damage types, not severity levels; severity and cost need a separate, validated approach.",
+    "Manual review of 12 low-confidence misses is a small qualitative sample, not a statistical result."
+  ]
+}
